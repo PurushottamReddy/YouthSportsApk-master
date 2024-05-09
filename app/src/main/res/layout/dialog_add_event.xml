@@ -1,0 +1,72 @@
+<!-- dialog_add_event.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+    <com.google.android.material.datepicker.MaterialDatePicker
+        android:id="@+id/dpEventStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shapeAppearance="?attr/shapeAppearanceMediumComponent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+    <com.google.android.material.datepicker.MaterialDatePicker
+        android:id="@+id/dpEventEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shapeAppearance="?attr/shapeAppearanceMediumComponent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Type"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+    <com.google.android.material.spinner.MaterialSpinner
+        android:id="@+id/spEventType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/event_types"
+        tools:ignore="MissingClass" />
+
+</LinearLayout>

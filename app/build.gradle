@@ -1,0 +1,56 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+
+
+
+android {
+    namespace 'com.example.youthsports'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.youthsports"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    //retrofit for making http requests
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0' // For Gson converter
+
+    // Material Components for Android
+    implementation 'com.google.android.material:material:1.6.0'
+
+    //circular image view for profile picture
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+}

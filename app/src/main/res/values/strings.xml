@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">YouthSports</string>
+    <string name="userEmail">User Email</string>
+    <string name="password">password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="reset_password">Reset password</string>
+    <string name="backend_url"> https://youthsportsbackend-b0d84e90a583.herokuapp.com/youthsports/</string>
+    <string name="title_home">Dashboard</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Logout">Logout</string>
+    <string name="logout">Log out</string>
+    <string name="dont_have_account">"Dont have account? "</string>
+    <string name="trouble_logging_in">Trouble Logging in</string>
+    <string name="group_icon">Group Icon</string>
+    <string name="description">Description</string>
+    <string name="select_date">Awarded date</string>
+    <string name="title">Achievement Title</string>
+</resources>

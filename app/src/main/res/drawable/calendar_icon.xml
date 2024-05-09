@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Calendar background -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M19,4H18V2H16V4H8V2H6V4H5C3.89,4 3,4.9 3,6V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V6C21,4.9 20.1,4 19,4Z" />
+
+    <!-- Calendar grids -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,10H5V12H7V10M9,10H11V12H9V10M13,10H15V12H13V10M17,10H19V12H17V10M7,14H5V16H7V14M9,14H11V16H9V14M13,14H15V16H13V14M17,14H19V16H17V14M7,18H5V20H7V18M9,18H11V20H9V18M13,18H15V20H13V18M17,18H19V20H17V18" />
+
+</vector>

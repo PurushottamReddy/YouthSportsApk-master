@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboards.GroupFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="Group Chat"
+        app:titleTextColor="@android:color/white" />
+    <TextView
+        android:id="@+id/group_chat_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:text="No chats. Please go ahead and create chats if you're a player or coach."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible"
+        android:padding="16dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/joinedGroupsChatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/availableGroupChatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/joinedGroupsChatRecyclerView"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/creategroupchatfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_add"
+        app:layout_anchor="@id/availableGroupChatRecyclerView"
+        app:layout_anchorGravity="bottom|end"/>
+</RelativeLayout>
